@@ -37,7 +37,7 @@
 (eval-when-compile (require 'cl))
 (require 'anything)
 (require 'anything-match-plugin)
-(require 'sage-shell)
+(require 'sage-shell-mode)
 
 (defvar anything-sage-action-alist
   '(("Insert" . anything-sage-objcts-insert-action)
