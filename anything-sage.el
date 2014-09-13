@@ -4,7 +4,6 @@
 ;; Author: Sho Takemori <stakemorii@gmail.com>
 ;; URL: https://github.com/stakemori/anything-sage
 ;; Keywords: Sage, math, anything
-;; Created: 2012
 ;; Version: 0.0.1
 ;; Package-Requires: ((anything "1.3.9") (sage-shell-mode "0.0.1"))
 
