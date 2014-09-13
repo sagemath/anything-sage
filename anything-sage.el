@@ -6,7 +6,7 @@
 ;; Keywords: Sage, math, anything
 ;; Created: 2012
 ;; Version: 0.0.1
-;; Package-Requires: ((anything "20130605.1746") (sage-shell "0.0.1"))
+;; Package-Requires: ((anything "20130605.1746") (sage-shell-mode "0.0.1"))
 
 ;;; License
 ;; This program is free software; you can redistribute it and/or modify
@@ -24,14 +24,13 @@
 
 
 ;;; Installation
-;; 1. Install sage-shell.el. See the comment of sage-shell.el for the installation.
+;; 1. Install sage-shell-mode. See the comment of sage-shell-mode.el for the installation.
 ;; 2. Ensure that anything.el and anything-match-plugin.el are in your load-path.
 ;; 3. Put this file to your load-path and bytecompile it.
-;; 4. Put the following lines to ~/.emacs or ~/.emacs.d/init.el.
-;; (setq sage-shell:completion-function
-;;       'anything-sage-shell
-;;       sage-shell:help-completion-function
-;;       'anything-sage-shell-describe-object-at-point)
+;; 4. Bind 'anything-sage-shell to a key: e.g.
+;; (defun anything-sage-set-up ()
+;;   (local-set-key (kbd "C-c C-i") 'anything-sage-shell))
+;; (add-hook 'sage-shell-mode-hook 'anything-sage-set-up)
 
 ;;; Code:
 (eval-when-compile (require 'cl))
