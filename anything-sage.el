@@ -23,11 +23,8 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-;;; Installation
-;; 1. Install sage-shell-mode. See the comment of sage-shell-mode.el for the installation.
-;; 2. Ensure that anything.el and anything-match-plugin.el are in your load-path.
-;; 3. Put this file to your load-path and bytecompile it.
-;; 4. Bind 'anything-sage-shell to a key: e.g.
+;;; Setting
+;; Bind 'anything-sage-shell to a key: e.g.
 ;; (defun anything-sage-set-up ()
 ;;   (local-set-key (kbd "C-c C-i") 'anything-sage-shell))
 ;; (add-hook 'sage-shell-mode-hook 'anything-sage-set-up)
