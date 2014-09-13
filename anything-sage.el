@@ -6,7 +6,7 @@
 ;; Keywords: Sage, math, anything
 ;; Created: 2012
 ;; Version: 0.0.1
-;; Package-Requires: ((anything "20130605.1746") (sage-shell-mode "0.0.1"))
+;; Package-Requires: ((anything "1.3.9") (sage-shell-mode "0.0.1"))
 
 ;;; License
 ;; This program is free software; you can redistribute it and/or modify
