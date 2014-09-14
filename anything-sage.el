@@ -5,7 +5,7 @@
 ;; URL: https://github.com/stakemori/anything-sage
 ;; Keywords: Sage, math, anything
 ;; Version: 0.0.1
-;; Package-Requires: ((anything "1.3.9") (sage-shell-mode "0.0.1"))
+;; Package-Requires: ((cl-lib "0.5") (anything "1.3.9") (sage-shell-mode "0.0.1"))
 
 ;;; License
 ;; This program is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 ;; (add-hook 'sage-shell-mode-hook 'anything-sage-set-up)
 
 ;;; Code:
-(eval-when-compile (require 'cl))
+(require 'cl-lib)
 (require 'anything)
 (require 'anything-match-plugin)
 (require 'sage-shell-mode)
@@ -119,7 +119,7 @@
 
 (defun anything-sage-make-command-list ()
   (setq anything-sage-commnd-list-cached
-        (loop for i from 0 to (ring-size comint-input-ring)
+        (cl-loop for i from 0 to (ring-size comint-input-ring)
               collect (ring-ref comint-input-ring i))))
 
 ;;;###autoload
