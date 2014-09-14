@@ -11,12 +11,14 @@ You will be able to install `anything-sage` from
 [MELPA](https://github.com/milkypostman/melpa.git) by package.el
 (`M-x package-install anything-sage`).
 
-# Setting
-Call `anything-sage-shell` by `M-x anything-sage-shell`
-or bind `anything-sage-shell` to a key, e.g.
-
+# An example for Setting
+Bind `anything-sage-shell`,
+`anything-sage-shell-describe-object-at-point` and
+`anything-sage-command-history` to some keys, e.g.:
 ```lisp
 (defun anything-sage-set-up ()
-  (local-set-key (kbd "C-c C-i") 'anything-sage-shell))
+  (local-set-key (kbd "C-c C-i") 'anything-sage-shell)
+  (local-set-key (kbd "C-c C-d") 'anything-sage-shell-describe-object-at-point)
+  (local-set-key (kbd "M-r") 'anything-sage-command-history))
 (add-hook 'sage-shell-mode-hook 'anything-sage-set-up)
 ```
