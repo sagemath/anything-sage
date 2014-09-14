@@ -34,6 +34,10 @@
 (require 'anything-match-plugin)
 (require 'sage-shell-mode)
 
+(defgroup anything-sage
+  nil "an anything source for `sage-shell-mode'."
+  :group 'anything)
+
 (defvar anything-sage-action-alist
   '(("Insert" . anything-sage-objcts-insert-action)
     ("View Docstring" . anything-sage-show-doc)))
@@ -61,7 +65,7 @@
 
 (defcustom anything-sage-candidate-regexp (rx alnum (zero-or-more (or alnum "_")))
   "Regexp used for collecting Sage attributes and functions."
-  :group 'sage-shell
+  :group 'anything-sage
   :type 'regexp)
 
 (defconst anything-sage-cands-buf-name " *anything Sage*")
