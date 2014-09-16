@@ -1,4 +1,4 @@
-;;; anything-sage.el --- An anything extension for sage-shell.
+;;; anything-sage.el --- An anything extension for sage-shell-mode.
 
 ;; Copyright (C) 2012-2014 Sho Takemori.
 ;; Author: Sho Takemori <stakemorii@gmail.com>
