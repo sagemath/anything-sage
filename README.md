@@ -3,11 +3,12 @@
  source for
 [sage-shell-mode](https://github.com/stakemori/sage-shell-mode).
 
-This package is similar to
+This package is an `anything` version of
 [helm-sage](https://github.com/stakemori/helm-sage).
+If you use Emacs 24 or newer, then it is recommended to use [helm-sage](https://github.com/stakemori/helm-sage).
 
 # Installation
-You will be able to install `anything-sage` from
+You can install `anything-sage` from
 [MELPA](https://github.com/milkypostman/melpa.git) by package.el
 (`M-x package-install anything-sage`).
 
