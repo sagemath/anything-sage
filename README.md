@@ -29,7 +29,7 @@ There are 3 actions, "Insert", "View Docstring" and "View Source File".
 
 
 
-# An example for setting
+# Sample configuration
 Bind `anything-sage-shell`,
 `anything-sage-shell-describe-object-at-point` and
 `anything-sage-command-history` to some keys, e.g.:
