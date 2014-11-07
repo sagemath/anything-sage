@@ -1,3 +1,5 @@
+[![melpa badge][melpa-badge]][melpa-link] [![melpa stable badge][melpa-stable-badge]][melpa-stable-link]
+
 # Overview
 `anything-sage` provides an [anything](https://github.com/emacs-anything/anything)
  source for
@@ -40,3 +42,8 @@ Bind `anything-sage-shell`,
   (local-set-key (kbd "M-r") 'anything-sage-command-history))
 (add-hook 'sage-shell-mode-hook 'anything-sage-set-up)
 ```
+
+[melpa-link]: http://melpa.org/#/anything-sage
+[melpa-stable-link]: http://stable.melpa.org/#/anything-sage
+[melpa-badge]: http://melpa.org/packages/anything-sage-badge.svg
+[melpa-stable-badge]: http://stable.melpa.org/packages/anything-sage-badge.svg
